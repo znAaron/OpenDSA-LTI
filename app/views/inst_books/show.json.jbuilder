@@ -45,21 +45,23 @@ json.chapters do
                   json.set! :showsection, inst_section.show
                   json.set! :lms_item_id, inst_section.lms_item_id
                   json.set! :lms_assignment_id, inst_section.lms_assignment_id
-
-                  learning_tool = inst_section.learning_tool
-                  if learning_tool
-                    json.set! :learning_tool, learning_tool
-                    json.set! :resource_type, inst_section.resource_type
-                    json.set! :resource_name, inst_section.resource_name
-                    exercise = inst_section.inst_book_section_exercises.first
-                    json.set! :points, exercise.points.to_f
-                    json.set! :launch_url, "#{@extrtool_launch_base_url}/#{exercise.id}"
-                  else
-                    exercises = inst_section.inst_book_section_exercises
-                    if !exercises.empty?
-                      for inst_book_section_exercise in exercises
-                        exercise_name = InstExercise.where(:id => inst_book_section_exercise.inst_exercise_id).first.short_name
-                        json.set! exercise_name do
+                  
+                  exercises = inst_section.inst_book_section_exercises
+                  
+                  if !exercises.empty?
+                    for inst_book_section_exercise in exercises
+                      inst_exercise = InstExercise.where(:id => inst_book_section_exercise.inst_exercise_id).first
+                      exercise_name = inst_exercise.short_name
+                      json.set! exercise_name do
+                        if inst_exercise.learning_tool
+                          json.set! :id, inst_book_section_exercise.id
+                          json.set! :learning_tool, inst_exercise.learning_tool
+                          json.set! :resource_type, inst_section.resource_type
+                          json.set! :resource_name, inst_section.resource_name
+                          exercise = inst_section.inst_book_section_exercises.first
+                          json.set! :points, exercise.points.to_f
+                          json.set! :launch_url, "#{@extrtool_launch_base_url}/#{exercise.id}"
+                        else
                           json.set! :id, inst_book_section_exercise.id
                           json.set! :long_name, InstExercise.where(:id => inst_book_section_exercise.inst_exercise_id).first.name
                           json.set! :required, inst_book_section_exercise.required

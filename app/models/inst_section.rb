@@ -33,13 +33,8 @@ class InstSection < ActiveRecord::Base
     inst_sec.hard_deadline = section_obj['hard_deadline']
     inst_sec.save
 
-    # learning tool section
-    if section_obj['learning_tool'] and section_obj['resource_type'] == 'external_assignment'
-      InstExercise.save_data_from_json(book, inst_sec, section_name, section_obj, update_mode)
-    else # OpenDSA section
-      section_obj.each do |k, v|
-        InstExercise.save_data_from_json(book, inst_sec, k, v, update_mode) if v.is_a?(Hash)
-      end
+    section_obj.each do |k, v|
+      InstExercise.save_data_from_json(book, inst_sec, k, v, update_mode) if v.is_a?(Hash)
     end
   end
   #~ Instance methods .........................................................

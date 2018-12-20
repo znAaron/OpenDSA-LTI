@@ -33,28 +33,22 @@ class InstExercise < ActiveRecord::Base
       ex.save
     end
 
-    if exercise_obj.is_a?(Hash) and exercise_obj['learning_tool']
-      book_sec_ex = InstBookSectionExercise.find_by(inst_book_id: book.id,
-                                                    inst_section_id: inst_section.id)
-    else
-      book_sec_ex = InstBookSectionExercise.find_by(inst_book_id: book.id,
-                                                    inst_section_id: inst_section.id,
-                                                    inst_exercise_id: ex.id)
-    end
+    book_sec_ex = InstBookSectionExercise.find_by(inst_book_id: book.id,
+                                                  inst_section_id: inst_section.id,
+                                                  inst_exercise_id: ex.id)
 
     if !update_mode or (update_mode and !book_sec_ex)
       book_sec_ex = InstBookSectionExercise.new
       book_sec_ex.inst_book_id = book.id
       book_sec_ex.inst_section_id = inst_section.id
+      book_sec_ex.inst_exercise_id = ex.id
     end
 
     if exercise_obj.is_a?(Hash) and exercise_obj['learning_tool']
-      book_sec_ex.inst_exercise_id = ex.id
       book_sec_ex.points = exercise_obj['points'] || 0
       book_sec_ex.required = exercise_obj['required'] || false
       book_sec_ex.threshold = 100
     else # OpenDSA exercise
-      book_sec_ex.inst_exercise_id = ex.id
       # puts exercise_obj['points']
       book_sec_ex.points = exercise_obj['points'] || 0
       book_sec_ex.required = exercise_obj['required'] || false
