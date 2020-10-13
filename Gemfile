@@ -65,10 +65,11 @@ group :assets do
   gem 'autoprefixer-rails'
 end
 
-gem 'mysql2'
+# gem 'mysql2'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'rspec-rails', '>=3.4.2'
   gem 'annotate'
   gem 'rails-erd', github: 'voormedia/rails-erd'
