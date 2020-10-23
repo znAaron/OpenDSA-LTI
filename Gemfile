@@ -65,7 +65,8 @@ group :assets do
   gem 'autoprefixer-rails'
 end
 
-gem 'mysql2'
+# gem 'mysql2'
+gem 'pg'
 
 group :development, :test do
   gem 'sqlite3'
