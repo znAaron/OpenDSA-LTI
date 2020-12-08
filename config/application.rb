@@ -27,7 +27,7 @@ module OpenDSA
     # config.autoload_paths += %W(#{config.root}/extras)
 
     # configure delayed job system
-    config.active_job.queue_adapter = :delayed_job
+    #config.active_job.queue_adapter = :delayed_job
 
     # disable SSL check during development
     #if Rails.env.development?

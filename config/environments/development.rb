@@ -83,7 +83,7 @@ OpenDSA::Application.configure do
   #   end
   # end
 
-  config.active_job.queue_adapter = :delayed_job
+  #config.active_job.queue_adapter = :delayed_job
 
   config.assets.enabled = false
 

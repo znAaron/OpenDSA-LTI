@@ -50,7 +50,7 @@ gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
 gem 'addressable', '~> 2.3', '>= 2.3.8'
 
 gem 'daemons'
-gem 'delayed_job_active_record'
+# gem 'delayed_job_active_record'
 gem 'progress_job'
 
 
@@ -65,7 +65,7 @@ group :assets do
   gem 'autoprefixer-rails'
 end
 
-# gem 'mysql2'
+gem 'mysql2'
 gem 'pg'
 
 group :development, :test do

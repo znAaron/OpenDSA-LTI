@@ -20,7 +20,7 @@ require 'capistrano/bower'
 require 'capistrano/bundler'
 require 'capistrano/passenger'
 require 'capistrano/rbenv'
-require 'capistrano/delayed_job'
+#require 'capistrano/delayed_job'
 require 'whenever/capistrano'
 
 require "capistrano/scm/git"

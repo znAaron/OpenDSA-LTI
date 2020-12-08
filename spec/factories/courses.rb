@@ -23,6 +23,8 @@ FactoryBot.define do
     name { "Introduction to Software Design" }
     number { "CS 1114" }
     organization_id { 1 }
+    user_id {0}
+    slug {"cs1114"}
     # url_part "cs-1114"
   end
 
