@@ -42,7 +42,7 @@ create table odsa_user_interactionsy2022 partition of odsa_user_interactions
   for values from ('2021-12-31 23:59:59.999999') to ('2022-12-31 23:59:59.999999');
 
 create table odsa_user_interactionsy2023 partition of odsa_user_interactions
-  for values from ('2022-12-31 23:59:59.999999') to ('2017-12-31 23:59:59.999999');
+  for values from ('2022-12-31 23:59:59.999999') to ('2023-12-31 23:59:59.999999');
 
 create table odsa_user_interactionsy2024 partition of odsa_user_interactions
   for values from ('2023-12-31 23:59:59.999999') to ('2024-12-31 23:59:59.999999');

@@ -261,4 +261,30 @@ INSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") 
 --
 
 /*!40000 ALTER TABLE "odsa_user_interactions2" DISABLE KEYS */;
-INSERT INTO "odsa_user_interactions" ("user_id", "inst_book_id", "inst_section_id", "inst_book_section_exercise_id", "name", "description", "action_time", "uiid", "browser_family", "browser_version", "os_family", "os_version", "device", "ip_address", "created_at", "updated_at") VALUES (0,NULL,NULL,NULL,'sean','test','2016-01-01 00:00:00',0,'chrome','4','windows','4','pc','4','2016-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'sean','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'bob','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-10-31 00:00:00',NULL),(0,NULL,NULL,NULL,'sean','test','2016-01-01 00:00:00',0,'chrome','4','windows','4','pc','4','2016-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'sean','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'bob','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-10-31 00:00:00',NULL);
+INSERT INTO "odsa_user_interactions" ("user_id", "inst_book_id", "inst_section_id", "inst_book_section_exercise_id", "name", "description", "action_time", "uiid", "browser_family", "browser_version", "os_family", "os_version", "device", "ip_address", "created_at", "updated_at") VALUES (0,NULL,NULL,NULL,'sean','test','2016-01-01 00:00:00',0,'chrome','4','windows','4','pc','4','2016-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'sean','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'bob','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-10-31 00:00:00',NULL),(0,NULL,NULL,NULL,'sean','test','2016-01-01 00:00:00',0,'chrome','4','windows','4','pc','4','2016-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'sean','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-12-01 00:00:00',NULL),(0,NULL,NULL,NULL,'bob','test','2017-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2017-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'billy','test','2010-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2010-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'joel','test','2011-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2011-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'lucas','test','2012-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2012-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'santa','test','2013-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2013-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'senko','test','2014-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2014-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'elmo','test','2015-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2015-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'oscar','test','2018-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2018-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'barney','test','2019-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2019-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'michael','test','2020-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2020-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'jim','test','2021-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2021-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'pam','test','2022-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2022-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'dwight','test','2023-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2023-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'kevin','test','2024-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2024-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'angela','test','2025-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2025-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'meredith','test','2026-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2026-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'jan','test','2027-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2027-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'holly','test','2028-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2028-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'toby','test','2029-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2029-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'stanley','test','2030-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2030-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'phylis','test','2031-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2031-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'andy','test','2032-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2032-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'creed','test','2033-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2033-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'ryan','test','2034-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2034-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'kelly','test','2035-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2035-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'david','test','2036-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2036-10-31 00:00:00',NULL),
+(0,NULL,NULL,NULL,'daryl','test','2037-11-30 00:00:00',0,'chrome','4','windows','4','pc','4','2037-10-31 00:00:00',NULL);
